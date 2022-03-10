@@ -1,0 +1,15 @@
+
+#Ganesanu Gigi Florin 324CA
+
+    Tema incepe cu declararea structurilor route table si arp.
+Apoi am creat o functie calculate line care imi indica numarul 
+de linii dintr-un fisier pentru al putea parsa linie cu linie.
+Functia best route este o cautare binara pe biti a intrarii potrivite
+in tabela de routare, care gaseste intrarea cu prefixul cel mai lung
+care se potriveste cu adresa noastra destinatie. Am creat o functie 
+de comparare pentru qsort. Apoi in main verific ce tip are ethdr 
+daca e de tip ip trimit icmp cu adresele sursa si destinatie schimbate
+intre ele apoi verific daca a expirat tipul unui pachet si trimit
+ICMP_TIME_EXCEEDED apoi decrementez timpul de viata al unui pachet
+si calculez suma de control pentru pachetul curent apoi gasesc cea 
+mai buna ruta ii setez interfata si trimit pachetul.
